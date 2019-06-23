@@ -16,7 +16,7 @@ output: html_document
 # Problem Summary
 
 After finishing all required lectures and Quizes the students are required to perform a course project focusing on making the tidy dataset from messy data. 
-Firstly we had to download all neccessary input data describing the experimental project of *Human Activity Recognition Using Smartphones Data Set*. Human Activity Recognition database was built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
+Firstly we had to download all neccessary input data describing the experimental project of *Human Activity Recognition Using Smartphones Data Set (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)* . Human Activity Recognition database was built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 Next, we had to join the train and test datasets, both cointaing 561 experimental measurements (our features) of partiucular subject activity. Consequently, the descriptive lables of the particular measurements were linked to the dataset from activity_labels.txt and only the features on the mean and standard deviation for each measurement were extracted. 
 After attaching the descriptive activity lables and subject ID (30 numbers reflecting 30 different individuals shich underwent this experiment) the independent tidy data set with the average of each variable for each activity and each subject was created.
 Finally the tidy dataset was stored via *write.table(data_summarised, file = "CourseProject2.txt", row.name=FALSE)* in the mentioned text file. 
